@@ -1,4 +1,4 @@
-# Lecture_DeepLearning
+# 初学者向け深層学習教材
 
 ## 準備
 
