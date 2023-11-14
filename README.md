@@ -2,14 +2,51 @@
 
 ## 準備
 
-### 初回
+### 環境構築１ (初回のみ)
 
-1．仮想環境
+1．仮想環境の作成
 ```
 python -m venv venv_DL
-cd venv_DL
-. bin/activate
+```
+
+1. gitリポジトリの獲得
+```
+git clone https://github.com/KEIO-ALS/Lecture_DeepLearning.git
 ```
 
 
-data(NN): https://drive.google.com/file/d/1NOmv4nSnx9cnPUzORlZtfCDZ1pdeuED3/view?usp=sharing
+### 仮想環境の起動 (毎回)
+
+1. 仮想環境を作動させる
+- Mac
+    ```
+    cd path/to/venv_DL
+    . bin/activate
+    cd Lecture_DeepLearning
+    ```
+- Windows
+    ```
+    cd path\to\venv_DL
+    Scripts\activate
+    cd Lecture_DeepLearning
+    ```
+
+
+### 環境構築２ (初回のみ)
+
+1. 外部ライブラリ
+```
+python -m pip install -U pip
+pip install -r requirements.txt
+```
+
+1. データセット
+データセットを[GoogleDrive](https://drive.google.com/file/d/1NOmv4nSnx9cnPUzORlZtfCDZ1pdeuED3/view?usp=sharing)からダウンロードし、`1_NeuralNetwork`ディレクトリに解凍
+
+
+## 全結合
+
+## 自己回帰モデル
+
+## 強化学習
+https://gymnasium.farama.org/tutorials/training_agents/reinforce_invpend_gym_v26/

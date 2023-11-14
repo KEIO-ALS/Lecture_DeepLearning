@@ -9,8 +9,10 @@ import torch
 from tqdm import tqdm
 import gymnasium as gym
 import os
+import sys
 
-task_name = "__"
+num_episode = sys.argv[1]
+task_name = f"{num_episode}_episode"
 if not os.path.exists(f"outputs/{task_name}"):
     os.makedirs(f"outputs/{task_name}")
 
@@ -20,7 +22,13 @@ plt.rcParams["figure.figsize"] = (10, 5)
 env = gym.make("InvertedPendulum-v4")
 wrapped_env = gym.wrappers.RecordEpisodeStatistics(env, 50)
 
-total_num_episodes = int(1e2)
+def convert_k_to_number(string):
+    if string.endswith('K') or string.endswith('k'):
+        number = float(string[:-1])
+        return int(number * 1000)
+    else:
+        return int(string)
+total_num_episodes = convert_k_to_number(num_episode)
 obs_space_dims = env.observation_space.shape[0]
 action_space_dims = env.action_space.shape[0]
 rewards_over_seeds = []

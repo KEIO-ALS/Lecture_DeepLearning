@@ -54,7 +54,7 @@ record = {
     "train_accuracies":[],
     "test_accuracies":[],
 }
-num_epochs = 20
+num_epochs = 10
 for e in range(1,num_epochs+1):
     epoch_loss = 0
     num_batch = 0
