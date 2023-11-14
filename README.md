@@ -7,6 +7,7 @@
 1．仮想環境の作成
 ```
 python -m venv venv_DL
+cd venv_DL
 ```
 
 1. gitリポジトリの獲得
@@ -18,15 +19,14 @@ git clone https://github.com/KEIO-ALS/Lecture_DeepLearning.git
 ### 仮想環境の起動 (毎回)
 
 1. 仮想環境を作動させる
+必要であれば`cd path/to/venv_DL`で先にディレクトリに移動
 - Mac
     ```
-    cd path/to/venv_DL
     . bin/activate
     cd Lecture_DeepLearning
     ```
 - Windows
     ```
-    cd path\to\venv_DL
     Scripts\activate
     cd Lecture_DeepLearning
     ```
