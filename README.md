@@ -50,3 +50,16 @@ pip install -r requirements.txt
 
 ## 強化学習
 https://gymnasium.farama.org/tutorials/training_agents/reinforce_invpend_gym_v26/
+
+1. 学習済みモデルの実行
+```
+cd path/to/3_ReinforcementLearning
+```
+2000エピソード学習したモデル
+```
+python sample.py 2K
+```
+10000エピソード学習したモデル
+```
+python sample.py 10K
+```
