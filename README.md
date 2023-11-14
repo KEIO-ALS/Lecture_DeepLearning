@@ -55,11 +55,24 @@ https://gymnasium.farama.org/tutorials/training_agents/reinforce_invpend_gym_v26
 ```
 cd path/to/3_ReinforcementLearning
 ```
-2000エピソード学習したモデル
+2000エピソードを学習したモデル
 ```
 python sample.py 2K
 ```
-10000エピソード学習したモデル
+10000エピソードを学習したモデル
 ```
 python sample.py 10K
+```
+
+2. 任意のエピソード数で学習
+```
+cd path/to/3_ReinforcementLearning
+```
+100エピソードを学習
+```
+python reinforce_invpend_gym_v26.py 100
+```
+5000エピソードを学習
+```
+python reinforce_invpend_gym_v26.py 5K
 ```
